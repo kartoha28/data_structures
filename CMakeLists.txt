@@ -5,4 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(linked_list main.cpp
         SingleNode.h
-        DoubleNode.h)
+        DoubleNode.h
+        SingleList.h
+        SingleList.tpp
+)
