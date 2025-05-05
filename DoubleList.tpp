@@ -121,7 +121,7 @@ void DoubleList<T>::removeAtIndex(int index) {
 }
 
 template <typename T>
-T DoubleList<T>::operator[](int index) const {
+T& DoubleList<T>::operator[](int index) {
     checkIndex(index);
     auto current = head;
     for (int i = 0; i < index; ++i) {
@@ -129,6 +129,17 @@ T DoubleList<T>::operator[](int index) const {
     }
     return current->data;
 }
+
+template <typename T>
+const T& DoubleList<T>::operator[](int index) const {
+    checkIndex(index);
+    auto current = head;
+    for (int i = 0; i < index; ++i) {
+        current = current->next;
+    }
+    return current->data;
+}
+
 
 template <typename T>
 bool DoubleList<T>::isEmpty() const {

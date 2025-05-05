@@ -28,7 +28,9 @@ public:
     void removeFromEnd();
     void removeAtIndex(int index);
 
-    T operator[](int index) const;
+    T& operator[](int index);             // неконстантна версія
+    const T& operator[](int index) const; // константна версія
+
     bool isEmpty() const;
     bool contains(const T& value) const;
     int getSize() const;
