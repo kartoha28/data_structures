@@ -8,4 +8,8 @@ add_executable(linked_list main.cpp
         DoubleNode.h
         SingleList.h
         SingleList.tpp
+        DoubleList.tpp
+        DoubleList.h
+        Student.cpp
+        Student.h
 )
