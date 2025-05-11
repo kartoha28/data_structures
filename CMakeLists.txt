@@ -12,4 +12,6 @@ add_executable(linked_list main.cpp
         DoubleList.h
         Student.cpp
         Student.h
+        StackList.h
+        StackArray.h
 )
