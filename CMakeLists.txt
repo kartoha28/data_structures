@@ -14,4 +14,7 @@ add_executable(linked_list main.cpp
         Student.h
         StackList.h
         StackArray.h
+        QueueList.h
+        QueueArray.h
+        CircularQueue.h
 )

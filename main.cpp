@@ -6,6 +6,9 @@
 
 #include "StackList.h"
 #include "StackArray.h"
+#include "QueueList.h"
+#include "QueueArray.h"
+#include "CircularQueue.h"
 
 #include "Student.h"
 
@@ -69,6 +72,15 @@ int main() {
     } catch (const std::exception& e) {
         std::cout << "Error: " << e.what() << std::endl;
     }
+
+    QueueArray<int> queue(5);
+    queue.enqueue(10);
+    queue.enqueue(20);
+    queue.enqueue(30);
+
+    std::cout << queue.dequeue() << '\n'; // 10
+    std::cout << queue.peek() << '\n';    // 20
+
 
     return 0;
 }
